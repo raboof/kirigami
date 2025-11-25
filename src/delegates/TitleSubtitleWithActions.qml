@@ -138,8 +138,8 @@ Item {
         Kirigami.TitleSubtitle {
             id: titleSubtitle
             Layout.fillWidth: true
-            Layout.maximumWidth: parent.implicitWidth
             Layout.alignment: Qt.AlignLeft
+            Layout.horizontalStretchFactor: 2
             title: root.title
             subtitle: root.subtitle
             elide: root.elide
@@ -150,6 +150,7 @@ Item {
             id: actionToolBar
             Layout.fillWidth: true
             Layout.fillHeight: true
+            Layout.horizontalStretchFactor: 1
             actions: root.actions
             alignment: Qt.AlignRight
             flat: false
